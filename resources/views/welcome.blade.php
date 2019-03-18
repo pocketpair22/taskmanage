@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laraveldesuyo
+                    Laravelyadena
                 </div>
 
                 <div class="links">
