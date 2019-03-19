@@ -39,6 +39,6 @@ class UsersController extends Controller
     }
 
     public function delete(Request $req) {
-        return view('users.delete')
+        return view('users.delete');
     }
 }
