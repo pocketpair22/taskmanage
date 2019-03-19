@@ -8,9 +8,15 @@
     <body>
         <form action="login" method="post" accept-charset="utf-8">
             {!! csrf_field() !!}
-            <input type="text" name="name" value="name">
-            <input type="password" name="password" value="pass">
+            <p><label>ユーザ名：<input type="text" name="name" value="{{$name}}"></label></p>
+            <p><label>パスワード：<input type="password" name="password" value=""></label></p>
             <input type="submit" value="送信">
         </form>
+        <?php if ($name): ?>
+            <p>{{$name}}</p>
+        <?php endif; ?>
+        <?php if ($password): ?>
+            <p>{{$password}}</p>
+        <?php endif; ?>
     </body>
 </html>
