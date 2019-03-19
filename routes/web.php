@@ -11,8 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/user', 'UsersController@index');
+Route::get('/', 'UsersController@index');
