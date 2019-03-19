@@ -9,7 +9,7 @@
         <p>退会された方のユーザ情報は全て削除されます。</p>
         <p>よろしければ退会ボタンをクリックしてください。</p>
         <form action="users.delete" method="delete" accept-charset="utf-8">
-            {!! csrf_field() !!}
+            {{ csrf_field() }}
             <input type="hidden" name="delete" value="true">
             <input type="submit" value="退会">
         </form>

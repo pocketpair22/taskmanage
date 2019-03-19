@@ -7,7 +7,7 @@
     </head>
     <body>
         <form action="add" method="post" accept-charset="utf-8">
-            {!! csrf_field() !!}
+            {{ csrf_field() }}
             <p><label>ユーザ名：<input type="text" name="name" value="{{$name}}"></label></p>
             <p><label>パスワード：<input type="password" name="password" value=""></label></p>
             <p><label>メールアドレス：<input type="text" name="email" value="{{$email}}"></label></p>
