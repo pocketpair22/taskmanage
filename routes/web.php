@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/users', 'UsersController@login');
+Route::post('/users', 'UsersController@login');
 Route::get('/users/add', 'UsersController@add');
 Route::get('/users/edit', 'UsersController@edit');
 Route::get('/users/delete', 'UsersController@delete');
