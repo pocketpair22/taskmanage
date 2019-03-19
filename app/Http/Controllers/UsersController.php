@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 class UsersController extends Controller
 {
     public function index() {
-        
+        die("exit");
         $data = [
             'msg'=>'indexdesu',
         ];
-        die("exit");
+        
         return view('users.index', $data);
     }
 
