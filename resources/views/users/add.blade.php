@@ -3,22 +3,16 @@
     <head>
         <meta charset="utf-8">
 
-        <title>login</title>
+        <title>新規登録</title>
     </head>
     <body>
-        <form action="users" method="post" accept-charset="utf-8">
+    <form action="users" method="post" accept-charset="utf-8">
             {!! csrf_field() !!}
             <p><label>ユーザ名：<input type="text" name="name" value="{{$name}}"></label></p>
             <p><label>パスワード：<input type="password" name="password" value=""></label></p>
+            <p><label>メールアドレス：<input type="text" name="email" value="{{$email}}"></label></p>
+            <p><label>メールアドレス(再入力)：<input type="text" name="email_confirm" value="{{$email_confirm}}"></label></p>
             <input type="submit" value="送信">
         </form>
-        <?php if ($name): ?>
-            <p>{{$name}}</p>
-        <?php endif; ?>
-        <?php if ($password): ?>
-            <p>{{$password}}</p>
-        <?php endif; ?>
-
-        <a href="users/add">新規登録</a>
     </body>
 </html>

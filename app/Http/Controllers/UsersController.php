@@ -23,6 +23,14 @@ class UsersController extends Controller
     }
 
     public function add() {
+        $name = "";
+        $password = "";
+        $email = "";
+        $email_confirm = "";
+        return view('users.add', compact('name', 'password', 'email', 'email_confirm'));
+    }
+
+    public function show() {
 
     }
 
