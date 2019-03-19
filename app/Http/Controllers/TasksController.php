@@ -8,7 +8,7 @@ class TasksController extends Controller
 {
     public function add(Request $req) {
         if ($req->has('task')) {
-            $task = req->task;
+            $task = $req->task;
         } else {
             $task = "";
         }
