@@ -10,5 +10,5 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+dd("exit")
 Route::get('/', 'UsersController@index');
