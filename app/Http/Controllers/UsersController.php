@@ -10,7 +10,7 @@ class UsersController extends Controller
         if ($request) {
             $user_data = $request::all();
         } else {
-            $user_data = "none"
+            $user_data = "none";
         }
         
         return view('users.login', compact('user_data'));
