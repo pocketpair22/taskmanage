@@ -6,6 +6,6 @@
         <title>index</title>
     </head>
     <body>
-        <p>aaa</p>
+        <p>{{msg}}</p>
     </body>
 </html>

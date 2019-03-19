@@ -8,11 +8,11 @@ class UsersController extends Controller
 {
     public function index() {
         
-        //$data = [
-        //    'msg'=>'indexdesu',
-        //];
+        $data = [
+            'msg'=>'indexdesu',
+        ];
         
-        //return view('users.index', $data);
+        return view('users.index', $data);
     }
 
     public function add() {
