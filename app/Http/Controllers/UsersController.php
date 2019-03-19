@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class UsersController
+class UsersController extends Controller
 {
+    die("exit");
     public function index() {
-        die("exit");
+        
         //$data = [
         //    'msg'=>'indexdesu',
         //];
