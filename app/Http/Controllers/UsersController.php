@@ -23,7 +23,7 @@ class UsersController extends Controller
 
     }
 
-    public function delete() [
+    public function delete() {
 
-    ]
+    }
 }
