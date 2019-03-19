@@ -15,4 +15,8 @@ class TasksController extends Controller
 
         return view('tasks.add', compact('task'));
     }
+
+    public function edit() {
+        return view('tasks.edit');
+    }
 }

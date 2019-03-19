@@ -6,7 +6,7 @@
         <title>login</title>
     </head>
     <body>
-        <form action="users" method="post" accept-charset="utf-8">
+        <form action="login" method="post" accept-charset="utf-8">
             {!! csrf_field() !!}
             <p><label>ユーザ名：<input type="text" name="name" value="{{$name}}"></label></p>
             <p><label>パスワード：<input type="password" name="password" value=""></label></p>
@@ -19,6 +19,6 @@
             <p>{{$password}}</p>
         <?php endif; ?>
 
-        <a href="users/add">新規登録</a>
+        <a href="add">新規登録</a>
     </body>
 </html>
