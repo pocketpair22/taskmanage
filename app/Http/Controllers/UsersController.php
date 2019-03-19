@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
-    die("exit");
     public function index() {
         
         //$data = [
