@@ -6,13 +6,10 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
-    public function index() {
+    public function login(Request $request) {
+        $user_data = $request::all();
         
-        $data = [
-            'msg'=>'indexdesu',
-        ];
-        
-        return view('users.index', $data);
+        return view('users.login', compact('user_data'));
     }
 
     public function add() {

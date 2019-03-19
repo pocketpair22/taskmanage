@@ -11,8 +11,11 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('index');
+});
 
-Route::get('/', 'UsersController@index');
+Route::get('/users', 'UsersController@login');
+Route::get('/users/add', 'UsersController@add');
+Route::get('/users/edit', 'UsersController@edit');
+Route::get('/users/delete', 'UsersController@delete');
